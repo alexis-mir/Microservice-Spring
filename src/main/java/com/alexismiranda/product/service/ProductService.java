@@ -12,7 +12,7 @@ public interface ProductService {
     List<Product> listAllProducts();
     Product findById(Long id);
     Product create(Product product);
-    Product update(Product product, Long id);
+    Product update(Product product);
     Product delete(Long id);
     List<Product> findByCategory(Category category);
     Product addStock(Long id, Double quantity);

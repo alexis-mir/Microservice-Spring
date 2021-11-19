@@ -36,8 +36,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product update(Product product, Long id) {
-        Product productDB = findById(id);
+    public Product update(Product product) {
+        Product productDB = findById(product.getId());
         if (productDB == null) return null;
         productDB.setName(product.getName());
         productDB.setDescription(product.getDescription());
